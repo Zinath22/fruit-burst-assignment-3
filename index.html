@@ -15,11 +15,57 @@
     .lato-font{
         font-family: 'Lato', sans-serif;
     }
+
 </style>
 </head>
 <body class="lato-font  ">
     <header class=" mx-auto px-8 md:px-16 lg:px-24 py-5 ">
       <!-- nav  -->
+      <div class="navbar px-5  lg:bg-[#F85559] rounded-full lg:text-white">
+        <div class=" lg:mr-0">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-square btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" 
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base 
+            shadow bg-base-100 rounded-box gap-5 w-52">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Shop</li>
+              <li>All Fruits</li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="navbar-start  ml-0 hidden lg:flex">
+            <ul class="menu gap-5 menu-horizontal">
+              <li>Home</li>
+              <li>About us</li>
+              <li>Shop</li>
+              <li>All Fruits</li>
+
+            </ul>
+
+          </div>
+          
+        
+
+         <div class="py-2"> 
+          <img src="./images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case font-bold text-3xl">Fruit Burst</a>
+
+         </div>
+
+         <div class="navbar-end hidden lg:block relative">
+          <input type="search" placeholder="Search Here" 
+          class="input rounded-full w-[300px] ml-20 " />
+          <img src="./images/Frame.svg" alt="" class="absolute top-3 right-[6rem]">
+        </div>
+        </div>
+        
+
+      <!-- banner  -->
       
       <section>
 
@@ -125,33 +171,33 @@
   <main class="max-w-screen-7xl mx-auto px-8 md:px-16 lg:px-24">
   <!-- deal section  -->
   <section class="">
-    <div class="flex flex-col gap-8 md:flex-row justify-center ">
+    <div class="flex justify-center items-center flex-col gap-8 md:flex-row  ">
       <div class="flex-1">
         <h2 class="text-4xl">Deal of the day</h2>
         <p class="text-sm mt-10 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
-      <div class="m-5 ">
+      <div class=" ">
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+          <div class="flex  flex-col">
+            <span class="countdown font-mono font-bold text-4xl">
               <span style="--value:29 ;"></span>:
             </span>
             Days 
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono font-bold text-4xl">
               <span style="--value:15;"></span>:
             </span>
             Hours
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono font-bold text-4xl">
               <span style="--value:25;"></span>:
             </span>
             Minutes
           </div> 
           <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
+            <span class="countdown font-mono font-bold text-4xl">
               <span style="--value:08;"></span>:
             </span>
             Seconds
@@ -160,7 +206,7 @@
     
     </div>
 
-  </div>
+  </div> 
   <!-- card  -->
   <div class=" grid mt-10 mb-5 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 bg-[#FFF]">
   <div class="card  bg-base-100 rounded-lg border-2 border-solid border-gray-100 text-center ">
@@ -491,30 +537,31 @@ onclick="my_modal_3.showModal()">Details</button>
   
       <div class="grid gap-7 grid-cols-1 md:grid-cols-3 mt-10">
           <div class="space-y-5">
-              <div class="flex  space-y-2  gap-3">
+              <div class="flex justify-center items-center flex-col md:flex-row space-y-2  gap-3">
                 <img class=" flex justify-center items-center rounded-full w-10 h-10 bg-gray-400 "  src="./images/group 1 (1).svg" alt="">
-                  <div>
+                  <div class="text-center md:text-left">
                   <h4 class="text-xl font-bold">Dedicated Team</h4>
-                  <hr >
+                  <hr class="w-20 mx-auto md:mx-0 text-gray-600 " >
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
               </div>
-              <div class="flex space-y-2  gap-3">
-                  <img class="rounded-full justify-center items-center w-10 h-10 bg-gray-400 " 
+              <div class="flex justify-center items-center flex-col md:flex-row space-y-2  gap-3">
+                  <img class="flex justify-center items-center rounded-full  w-10 h-10 bg-gray-400 " 
                   src="./images/love 1.svg" alt="">
-                  <div>
+                  <div class="text-center md:text-left" >
                   <h4 class="text-xl font-bold">Fresh is Best</h4>
-                  <hr >
+                  <hr class="w-20 mx-auto md:mx-0" >
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
-              </div><div class="flex space-y-2 gap-3">
-                  <img class="rounded-full  justify-center items-center w-10 h-10 bg-gray-400" 
+              </div>
+              <div class="flex justify-center items-center flex-col md:flex-row space-y-2 gap-3">
+                  <img class="rounded-full  flex justify-center items-center w-10 h-10 bg-gray-400" 
                   src="./images/gift-box 1.svg" alt="">
-                  <div>
+                  <div class="text-center md:text-left" >
                   <h4 class="text-xl font-bold">Gift Certificates</h4>
-                  <hr >
+                  <hr class="w-20 mx-auto md:mx-0" >
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
@@ -524,32 +571,32 @@ onclick="my_modal_3.showModal()">Details</button>
               <img src="./images/whychoose1.png" alt="">
           </div>
           <div class="space-y-5">
-              <div class="flex flex-row-reverse space-y-2  gap-3">
+              <div class="flex justify-center items-center flex-col  md:flex-row-reverse space-y-2  gap-3">
                   <img class="rounded-full  justify-center items-center w-10 h-10 bg-gray-400 " 
                   src="./images/fruit 1.svg" alt="">
-                  <div class="text-right">
+                  <div class="md:text-right text-center">
                   <h4 class="text-xl font-bold">Integrated Supplier</h4>
-                  <hr >
+                  <hr class="">
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
               </div>
-              <div class="flex flex-row-reverse space-y-2  gap-3">
+              <div class="flex justify-center items-center flex-col  md:flex-row-reverse space-y-2  gap-3">
                   <img class="rounded-full  justify-center items-center w-10 h-10 bg-gray-400 " 
                   src="./images/ice-cream 1.svg" alt="">
-                  <div class="text-right">
+                  <div class="md:text-right text-center">
                   <h4 class="text-xl font-bold">Sustainable Practice</h4>
-                  <hr >
+                  <hr class="" >
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
               </div>
-              <div class="flex flex-row-reverse space-y-2  gap-3">
+              <div class="flex justify-center items-center flex-col md:flex-row-reverse space-y-2  gap-3">
                   <img class="rounded-full  justify-center items-center w-10 h-10 bg-gray-400" 
                   src="./images/like 1.svg" alt="">
-                  <div class="text-right">
+                  <div class="md:text-right text-center">
                   <h4 class="text-xl font-bold">The Benefits Only</h4>
-                  <hr >
+                  <hr class="" >
                   <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 
                 </div>
@@ -561,10 +608,10 @@ onclick="my_modal_3.showModal()">Details</button>
 
 </main>
     <!-- footer  -->
-    <footer class="footer footer-center mt-15 py-32 bg-black w-full  text-white rounded">
+    <footer class="footer footer-center md:w-auto mt-15 py-32 bg-black w-full  text-white rounded">
       <div class="flex justify-center items-center gap-3">
       <img src="./images/logo.png" alt="">
-      <h2 class="">Fruit Burst</h2>
+      <h2 class="text-3xl">Fruit Burst</h2>
     </div>
       <div class="grid lg:grid-cols-6 grid-cols-3 gap-2  md:gap-4  ">
         <a class="">Home</a> 
